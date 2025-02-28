@@ -1,10 +1,10 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver # 指定数据库驱动类
-    # 数据库连接信息
+    # 数据库连接信息 allowPublicKeyRetrieval=true&useSSL=false&
     url: jdbc:mysql://127.0.0.1:3306/xiaohashu?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai
     username: root # 数据库用户名
-    password: TooS75cfCIe8+TLSuW/y4Clc5ZuzLk3gFZSaPg/lFdm8V5xZVNo/MUPDJhyQfB37Wzu39zoV8DPkdrvwCZUMdg== # 数据库密码
+    password: fleVBR1JBN8s1X68B94KJ6kqq75L8pcjCyQ8wwYXDkY0Ro377ekwA2EMa9LdcOD46xneFDnDzkct3QpdReTqiQ==
     type: com.alibaba.druid.pool.DruidDataSource
     druid: # Druid 连接池
       initial-size: 5 # 初始化连接池大小
@@ -16,7 +16,7 @@ spring:
       min-evictable-idle-time-millis: 300000 # 配置一个连接在连接池中最小生存的时间（单位：毫秒）
       max-evictable-idle-time-millis: 900000 # 配置一个连接在连接池中最大生存的时间（单位：毫秒）
       validation-query: SELECT 1 FROM DUAL # 配置测试连接是否可用的查询 sql
-      connectionProperties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIeSUKQPMk59364214rdJAldwO4sRe4jMDmtpab2NE0poYTahTz0YcTgTDHluyMC4kBZsUXtkCGT2T9Bxq4B/o8CAwEAAQ==
+      connectionProperties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAL+t2VRnM8XOAkzLYzF00pKv7fOK5C1ycUGUWi6xM8+2Y+3fzxo2zSX4TAjCjWtXW6A5vTNJpwk829oQmRvA1vcCAwEAAQ==
       test-on-borrow: false
       test-on-return: false
       pool-prepared-statements: false
